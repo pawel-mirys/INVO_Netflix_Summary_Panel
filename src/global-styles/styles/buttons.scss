@@ -1,0 +1,31 @@
+button {
+  @include flex(center, center, row);
+  border: none;
+  border-radius: 60px;
+  width: 100%;
+  height: 56px;
+  transition: 0.2s;
+  cursor: pointer;
+
+  &.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--color-white-100);
+    font-weight: 700;
+
+    &:hover {
+      background-color: var(--primary-color-dark);
+    }
+  }
+
+  &.btn-secondary {
+    background-color: var(--background-color);
+    color: var(--on-background-color-light);
+    border: 1px solid var(--border-color);
+    font-weight: 700;
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--background-color-dark);
+    }
+  }
+}
