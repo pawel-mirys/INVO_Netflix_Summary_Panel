@@ -1,0 +1,6 @@
+.checkout-options {
+  @include flex(center, center, column);
+  width: 100%;
+  margin: 29px 0 0 0;
+  gap: 12px;
+}

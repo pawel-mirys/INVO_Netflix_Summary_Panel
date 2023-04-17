@@ -7,6 +7,29 @@ button {
   transition: 0.2s;
   cursor: pointer;
 
+  &[data-loading='1'] {
+    .btn-primary__text {
+      display: none;
+      height: 65%;
+    }
+
+    .btn-primary__loader {
+      display: block;
+
+      img {
+        height: 100%;
+        object-fit: contain;
+        width: 25px;
+      }
+    }
+  }
+
+  &[data-loading='0'] {
+    .btn-primary__loader {
+      display: none;
+    }
+  }
+
   &.btn-primary {
     background-color: var(--primary-color);
     color: var(--color-white-100);
@@ -14,6 +37,9 @@ button {
 
     &:hover {
       background-color: var(--primary-color-dark);
+    }
+    &:active {
+      background-color: #b5120d;
     }
   }
 
@@ -25,7 +51,12 @@ button {
 
     &:hover {
       cursor: pointer;
-      background-color: var(--background-color-dark);
+      border: 1px solid var(--background-color-dark);
+      color: var(--background-color-dark);
+    }
+    &:active {
+      border: 1px solid var(--background-color-active);
+      color: var(--background-color-active);
     }
   }
 }

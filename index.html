@@ -11,7 +11,56 @@
 <body>
   <div id="home-page">
     <div class="checkout-card-component">
-      Checkout Card Component Content
+      <div class="checkout-card-component__order-summary">
+        <h2 class="checkout-card-component__header">
+          Order summary
+        </h2>
+        <p class="checkout-card-component__hint">
+          Check if your order matches
+        </p>
+        <div class="product-container">
+          <div class="product">
+            <div class="product__item">
+              <img class="product__image" src="./assets/images/Product.png" alt="Netflix Product">
+              <div class="product__details">
+                <h3 class="product__name">Individual</h3>
+                <p class="product__info">1 account</p>
+              </div>
+            </div>
+            <div class="product__prize-container">
+              <h3 class="product__prize">$10.00</h3>
+              <p class="product__prize-info">/month</p>
+            </div>
+          </div>
+        </div>
+        <div class="summary">
+          <div class="summary__product">
+            <p class="summary__title">
+              Product summary:
+            </p>
+            <div class="summary__prize-container">
+              <h3 class="summary__prize">$10.00</h3>
+              <p class="summary__prize-info">/month</p>
+            </div>
+          </div>
+          <div class="summary__total-prize-container">
+            <h2 class="summary__total-prize-title">Total:</h2>
+            <div class="summary__total-prize-wrapper">
+              <h2 class="summary__total-prize">$10.00</h2>
+              <p class="summary__total-prize-info">/month</p>
+            </div>
+          </div>
+        </div>
+        <div class="checkout-options">
+          <button class="btn-primary checkout-options__confirm" data-loading="0">
+            <div class="btn-primary__text">Confirm and pay</div>
+            <div class="btn-primary__loader">
+              <img src="/assets/icons/animated-loader.svg" alt="Loading…" />
+            </div>
+          </button>
+          <button class="btn-secondary checkout-options__cancel">Cancel order</button>
+        </div>
+      </div>
     </div>
   </div>
 
