@@ -50,6 +50,9 @@
   &__total-prize-info {
     color: var(--color-black-200);
     @include font-dtm-12;
-     margin: 10px 0 0 0;
+    margin: 10px 0 0 0;
+  }
+  @media (max-width: 550px) {
+      margin: 0 0 0 0;
   }
 }

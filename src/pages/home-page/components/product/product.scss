@@ -1,4 +1,4 @@
-.product-container {
+.product-list {
   width: 100%;
   margin: 40px 0 0px 0;
   padding: 0 0 24px 0;
@@ -38,5 +38,10 @@
       color: var(--color-black-200);
       margin: -14px 0 0 0;
     }
+  }
+
+  @media (max-width: 550px) {
+    margin: 48px 0 23px 0;
+    height: 100%;
   }
 }

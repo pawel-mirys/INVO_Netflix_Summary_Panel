@@ -10,7 +10,6 @@
   &__order-summary {
     @include flex(flex-start, flex-start, column);
     width: 100%;
-    height: 100%;
   }
   &__header {
     @include font-dtm-32;
@@ -20,5 +19,16 @@
     @include font-dtm-16;
     color: var(--color-black-200);
     margin: 12px 0 0 0;
+  }
+
+  @media (max-width: 550px) {
+    @include flex(space-between, flex-start, column);
+    width: 100%;
+    height: 100vh;
+    padding: 24px;
+    border-radius: 0;
+    &__order-summary {
+      height: 100%;
+    }
   }
 }
